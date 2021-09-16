@@ -1,0 +1,102 @@
+.features-img {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-title {
+  /* Позиционирование */
+  margin-bottom: 10px;
+
+  /* Типографика */
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  /* Отображение */
+  color: var(--second-text-color);
+}
+
+.features-text {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  /* Отображение */
+  color: var(--first-text-color);
+}
+
+/*---------------- Work ----------------*/
+.work-section {
+  padding-top: 0;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-title {
+  /* Позиционирование */
+  margin-bottom: 50px;
+
+  /* Типографика */
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Отображение */
+  color: var(--second-text-color);
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-item {
+  position: relative;
+}
+
+.work-label-overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+
+  bottom: 0;
+  left: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-label-text {
+  padding: 27px 0;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}

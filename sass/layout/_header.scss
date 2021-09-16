@@ -1,0 +1,141 @@
+.header .container {
+  display: flex;
+}
+
+/* ---------------- Line ----------------  */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-navigation {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+}
+
+/*---------------- Logo ----------------*/
+.header-logo {
+  /* Позиционирование */
+  display: block;
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+
+  /* Типографика */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  letter-spacing: 0.03em;
+}
+
+.header-logo-web {
+  color: var(--akcent-text-color);
+}
+
+/*---------------- Site nav ----------------*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  /* Позиционирование */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  /* Блочная модель */
+  display: block;
+
+  /* Типографика */
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  /* Отображение */
+  color: var(--second-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current {
+  color: var(--akcent-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  outline: none;
+  color: var(--akcent-text-color);
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item .current::after {
+  content: '';
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  top: 76px;
+  bottom: calc(0% - 1px);
+
+  border: 2px solid;
+  border-radius: 2px;
+  background-color: var(--akcent-text-color);
+}
+/*---------------- Site nav contacts ----------------*/
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-link {
+  /* Позиционирование */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+
+  /* Типографика */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  /* Отображение */
+  color: var(--first-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contacts-link-icon {
+  color: var(--first-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  outline: none;
+  color: var(--akcent-text-color);
+}
