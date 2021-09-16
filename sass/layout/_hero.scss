@@ -1,5 +1,5 @@
+/*------------------- Hero ------------------- */
 .hero {
-  /* align-items: center; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -11,16 +11,13 @@
     url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
 
   background-color: #2f303a;
 }
 
 .hero-title {
-  /* Позиционирование */
   margin-bottom: 30px;
 
-  /* Типографика */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -28,28 +25,5 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* Отображение */
-  color: var(--white-text-color);
-}
-
-/*---------------- Button ----------------*/
-.hero-button {
-  /* Блочная модель */
-  display: inline-block;
-  padding: 10px 32px;
-  min-width: 200px;
-
-  /* Типографика */
-  font-size: 16px;
-  line-height: 1.87;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
-
-  /* Отображение */
-  border: 0;
-  border-radius: 4px;
-  background-color: var(--akcent-text-color);
   color: var(--white-text-color);
 }

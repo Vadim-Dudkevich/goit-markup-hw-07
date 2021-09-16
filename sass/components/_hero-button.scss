@@ -1,0 +1,21 @@
+/*---------------- Button ----------------*/
+.hero-button {
+  /* Блочная модель */
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  /* Типографика */
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+
+  /* Отображение */
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--akcent-text-color);
+  color: var(--white-text-color);
+}

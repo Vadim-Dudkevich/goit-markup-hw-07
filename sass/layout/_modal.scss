@@ -1,3 +1,4 @@
+/*------------------- Modals ------------------- */
 .backdrop {
   position: fixed;
   height: 100vh;
@@ -8,6 +9,12 @@
   background: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms, visibility 250ms;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -37,21 +44,15 @@
   background-color: unset;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover .btn-icon,
+  &:focus .btn-icon {
+    fill: var(--akcent-text-color);
+  }
 }
 
 .btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn:hover .btn-icon,
-.btn:focus .btn-icon {
-  fill: var(--akcent-text-color);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .modal-title {
@@ -81,15 +82,19 @@
 
 .modal-form-field {
   margin-bottom: 10px;
-}
 
-.modal-form-field:nth-child(6) {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  &:nth-child(6) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.modal-form-field:nth-child(5) {
-  margin-bottom: 20px;
+  &:nth-child(5) {
+    margin-bottom: 20px;
+  }
+
+  &:focus-within {
+    color: var(--akcent-text-color);
+  }
 }
 
 .modal-form-label {
@@ -113,17 +118,13 @@
   cursor: pointer;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-field:focus-within {
-  color: var(--akcent-text-color);
-}
-
-.modal-form-imput:focus + .modal-form-icon,
-.modal-form-imput:focus {
-  outline: none;
-  border-color: var(--akcent-text-color);
-  fill: var(--akcent-text-color);
+  &:focus + .modal-form-icon,
+  &:focus {
+    outline: none;
+    border-color: var(--akcent-text-color);
+    fill: var(--akcent-text-color);
+  }
 }
 
 .modal-form-icon {
@@ -145,21 +146,18 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-}
 
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
-.modal-comment {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 
-.modal-comment:focus {
-  outline: none;
-  border-color: var(--akcent-text-color);
+  &:focus {
+    outline: none;
+    border-color: var(--akcent-text-color);
+  }
 }
 
 .modal-check-label {
@@ -201,10 +199,7 @@
   min-width: 200px;
 
   margin-top: 30px;
-  /* margin-left: 0;
-  margin-right: 0; */
 
-  /* Типографика */
   font-size: 16px;
   line-height: 1.87;
   cursor: pointer;
@@ -213,7 +208,6 @@
   text-align: center;
   justify-content: center;
 
-  /* Отображение */
   border: 0;
   border-radius: 4px;
   background-color: var(--akcent-text-color);
