@@ -1,16 +1,16 @@
 /*---------------- Site nav contacts ----------------*/
-.contacts {
+.contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.contacts-icon {
-  display: inline-block;
-  fill: currentColor;
-  margin-right: 10px;
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
-.contacts-link {
+.contacts-list__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -33,12 +33,12 @@
   }
 }
 
-.contacts-item {
-  &:not(:last-child) {
-    margin-right: 40px;
-  }
+.contacts-list__icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
-.contacts-link-icon {
-  color: var(--first-text-color);
-}
+// .contacts-link-icon {
+//   color: var(--first-text-color);
+// }

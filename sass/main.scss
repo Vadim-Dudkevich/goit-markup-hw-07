@@ -5,8 +5,8 @@
 @import './utils/hidden';
 @import './layout/header';
 @import './components/logo';
-@import './components/site-nav';
-@import './components/site-nav-contacts';
+@import './layout/site-nav';
+@import './layout/site-nav-contacts';
 @import './layout/hero';
 @import './components/hero-button';
 @import './layout/features';
@@ -15,9 +15,9 @@
 @import './components/team-socials';
 @import './layout/clients';
 @import './layout/footer';
-@import './components/footer-address';
-@import './components/footer-socials';
-@import './components/footer-newsletter';
+@import './layout/footer-address';
+@import './layout/footer-socials';
+@import './layout/footer-newsletter';
 @import './pages/portfolio';
 @import './pages/portfolio-filter';
-@import './layout/modal';
+@import './components/modal';
