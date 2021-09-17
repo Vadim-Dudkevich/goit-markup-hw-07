@@ -7,9 +7,10 @@
 }
 
 .address-item {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.17, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
 
   color: var(--white-text-color);
 }
@@ -19,10 +20,11 @@
 }
 
 .address-contacts-link {
+  @include font(14px, 1.74, 0.03em);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.74;
-  letter-spacing: 0.03em;
+  // font-size: 14px;
+  // line-height: 1.74;
+  // letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 

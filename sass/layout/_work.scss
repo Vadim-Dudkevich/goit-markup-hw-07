@@ -40,9 +40,10 @@
 .work-list__label-text {
   padding: 27px 0;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
 

@@ -5,9 +5,10 @@
 
 .email-title {
   align-items: center;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.15, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--white-text-color);
@@ -25,12 +26,13 @@
   padding-bottom: 15px;
   padding-left: 16px;
 
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 1.25, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.03em;
 
   display: flex;
   align-items: center;
-  letter-spacing: 0.03em;
   color: var(--first-text-color);
 
   background: transparent;
@@ -48,10 +50,12 @@
 
   margin-left: 12px;
 
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(16px, 1.87, 0.06em);
+  // font-size: 16px;
+  // line-height: 1.87;
+  // letter-spacing: 0.06em;
+
   cursor: pointer;
-  letter-spacing: 0.06em;
 
   text-align: left;
 

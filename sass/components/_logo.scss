@@ -8,11 +8,13 @@
 
   /* Типографика */
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.2, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
+
+  color: var(--second-text-color);
 }
 
 .header-logo-web {
@@ -27,14 +29,14 @@
 .footer-logo {
   margin-bottom: 20px;
 
-  display: flex;
-
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-  letter-spacing: 0.03em;
+  @include font(26px, 1.2, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
+
+  color: var(--white-text-color);
 }
 
 .footer-logo-web {
