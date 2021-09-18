@@ -11,11 +11,9 @@
 }
 
 .contacts-list__link {
+  @include center;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  display: flex;
-  align-items: center;
 
   @include font(14px, 1.14, 500, 0.02em);
 

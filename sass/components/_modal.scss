@@ -61,10 +61,6 @@
   margin-bottom: 12px;
 
   @include font(20px, 1.15, 700, 0.03em);
-  // font-weight: bold;
-  // font-size: 20px;
-  // line-height: 1.15;
-  // letter-spacing: 0.03em;
 
   text-align: center;
 
@@ -153,9 +149,6 @@
 
   &::placeholder {
     @include font(12px, 1.17, 0.01em);
-    // font-size: 12px;
-    // line-height: 1.17;
-    // letter-spacing: 0.01em;
   }
 
   &:focus {
@@ -175,9 +168,7 @@
 }
 
 .icon-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
 
   width: 15px;
   height: 15px;
@@ -199,7 +190,7 @@
 }
 
 .form-btn {
-  display: block;
+  @include center(block);
   align-self: center;
   padding: 10px 55px;
   min-width: 200px;
@@ -207,13 +198,6 @@
   margin-top: 30px;
 
   @include font(16px, 1.87, 0.06em);
-  // font-size: 16px;
-  // line-height: 1.87;
-  // cursor: pointer;
-  // letter-spacing: 0.06em;
-
-  text-align: center;
-  justify-content: center;
 
   border: 0;
   border-radius: 4px;

@@ -1,18 +1,12 @@
 /*---------------- Logo ----------------*/
 .header-logo {
-  /* Позиционирование */
   display: block;
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 24px;
 
-  /* Типографика */
   font-family: 'Raleway', sans-serif;
   @include font(26px, 1.2, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
 
   color: var(--second-text-color);
 }
@@ -31,10 +25,6 @@
 
   font-family: 'Raleway', sans-serif;
   @include font(26px, 1.2, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
 
   color: var(--white-text-color);
 }

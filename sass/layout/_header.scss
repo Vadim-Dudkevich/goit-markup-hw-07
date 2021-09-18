@@ -9,6 +9,5 @@
 }
 
 .header-navigation {
-  display: flex;
-  align-items: center;
+  @include center;
 }

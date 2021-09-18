@@ -1,7 +1,6 @@
 /*---------------- Site nav ----------------*/
 .nav-list {
-  display: flex;
-  align-items: center;
+  @include center;
 }
 
 .nav-list__item {
@@ -16,7 +15,6 @@
 
     position: absolute;
     display: flex;
-    justify-content: center;
 
     width: 100%;
     top: 76px;

@@ -1,14 +1,4 @@
 /*------------------- Clients ------------------- */
-.clients-title {
-  margin-bottom: 50px;
-
-  @include font(36px, 1.17, 0.03em);
-
-  text-align: center;
-
-  color: var(--second-text-color);
-}
-
 .clients-list {
   display: flex;
 }

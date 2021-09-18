@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --first-text-color: #757575;
   --second-text-color: #212121;
@@ -61,6 +60,16 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 0.03em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
 /*------------------- Header ------------------- */
 .header .container {
   display: flex;
@@ -73,17 +82,16 @@ img {
 
 .header-navigation {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 /*---------------- Logo ----------------*/
 .header-logo {
-  /* Позиционирование */
   display: block;
   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 24px;
-  /* Типографика */
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -118,6 +126,7 @@ img {
 /*---------------- Site nav ----------------*/
 .nav-list {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -133,7 +142,6 @@ img {
   content: '';
   position: absolute;
   display: flex;
-  justify-content: center;
   width: 100%;
   top: 76px;
   bottom: calc(0% - 1px);
@@ -174,10 +182,11 @@ img {
 }
 
 .contacts-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  align-items: center;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
@@ -221,11 +230,9 @@ img {
 
 /*---------------- Button ----------------*/
 .hero-button {
-  /* Блочная модель */
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
-  /* Типографика */
   font-size: 16px;
   line-height: 1.87;
   font-weight: 0.06em;
@@ -233,7 +240,6 @@ img {
   cursor: pointer;
   align-items: center;
   text-align: center;
-  /* Отображение */
   border: 0;
   border-radius: 4px;
   background-color: var(--akcent-text-color);
@@ -292,16 +298,6 @@ img {
   display: flex;
 }
 
-.work-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  font-weight: 0.03em;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--second-text-color);
-}
-
 .work-list__item {
   position: relative;
 }
@@ -337,16 +333,6 @@ img {
 
 .team-list {
   display: flex;
-}
-
-.team-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  font-weight: 0.03em;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--second-text-color);
 }
 
 .team-list__item {
@@ -386,6 +372,7 @@ img {
 .socials-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 16px;
 }
 
@@ -425,16 +412,6 @@ img {
 }
 
 /*------------------- Clients ------------------- */
-.clients-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  font-weight: 0.03em;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: var(--second-text-color);
-}
-
 .clients-list {
   display: flex;
 }
@@ -919,6 +896,8 @@ img {
 
 .form-btn {
   display: block;
+  justify-content: center;
+  align-items: center;
   align-self: center;
   padding: 10px 55px;
   min-width: 200px;
@@ -927,8 +906,6 @@ img {
   line-height: 1.87;
   font-weight: 0.06em;
   letter-spacing: 0.02em;
-  text-align: center;
-  justify-content: center;
   border: 0;
   border-radius: 4px;
   background-color: var(--akcent-text-color);

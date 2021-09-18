@@ -7,16 +7,6 @@
   display: flex;
 }
 
-.team-title {
-  margin-bottom: 50px;
-
-  @include font(36px, 1.17, 0.03em);
-
-  text-align: center;
-
-  color: var(--second-text-color);
-}
-
 .team-list__item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -37,10 +27,6 @@
   margin-bottom: 10px;
 
   @include font(16px, 1.19, 500, 0.03em);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
 
   text-align: center;
 
@@ -49,9 +35,6 @@
 
 .team-list__text {
   @include font(16px, 1.19, 0.03em);
-  // font-size: 16px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
 
   text-align: center;
 
