@@ -6,9 +6,7 @@
 .email-title {
   align-items: center;
   @include font(14px, 1.15, 0.03em);
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
+
   text-transform: uppercase;
 
   color: var(--white-text-color);
@@ -27,9 +25,6 @@
   padding-left: 16px;
 
   @include font(16px, 1.25, 0.03em);
-  // font-size: 16px;
-  // line-height: 1.25;
-  // letter-spacing: 0.03em;
 
   display: flex;
   align-items: center;
@@ -51,9 +46,6 @@
   margin-left: 12px;
 
   @include font(16px, 1.87, 0.06em);
-  // font-size: 16px;
-  // line-height: 1.87;
-  // letter-spacing: 0.06em;
 
   cursor: pointer;
 

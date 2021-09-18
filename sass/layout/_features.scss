@@ -13,13 +13,11 @@
 }
 
 .features-list__img {
-  display: flex;
+  @include center;
   padding-top: 25px;
   padding-bottom: 25px;
 
   margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
 
   background: #f5f4fa;
   border-radius: 4px;
@@ -29,27 +27,14 @@
   margin-bottom: 10px;
 
   @include font(14px, 1.14, 0.03em);
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--second-text-color);
   margin-bottom: 10px;
-
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
-  // text-transform: uppercase;
-
-  // color: var(--second-text-color);
 }
 
 .features-list__text {
   @include font(14px, 1.71, 0.03em);
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
 
   color: var(--first-text-color);
 }

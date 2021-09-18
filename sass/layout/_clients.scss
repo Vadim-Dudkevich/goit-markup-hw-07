@@ -4,10 +4,6 @@
 
   @include font(36px, 1.17, 0.03em);
 
-  // font-size: 36px;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
-
   text-align: center;
 
   color: var(--second-text-color);
@@ -27,12 +23,9 @@
 }
 
 .clients-list__link {
-  display: flex;
+  @include center;
   width: 100%;
   height: 100%;
-
-  justify-content: center;
-  align-items: center;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;

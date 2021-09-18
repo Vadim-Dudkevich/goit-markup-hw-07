@@ -4,3 +4,9 @@
   font-weight: $fw;
   letter-spacing: $ls;
 }
+
+@mixin center($ds: flex, $jf: center, $ai: center) {
+  display: $ds;
+  justify-content: $jf;
+  align-items: $ai;
+}
