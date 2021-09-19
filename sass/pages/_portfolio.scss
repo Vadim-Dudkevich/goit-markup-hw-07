@@ -42,9 +42,7 @@
 }
 
 .portfolio-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 0.06em);
 
   color: var(--second-text-color);
 }
