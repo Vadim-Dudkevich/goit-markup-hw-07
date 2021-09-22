@@ -158,9 +158,7 @@
 }
 
 .modal-check-label {
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  @include center;
 }
 
 .check-text {

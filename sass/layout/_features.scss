@@ -1,10 +1,10 @@
 /*------------------- Features ------------------- */
 
-.features-list {
+.features {
   display: flex;
 }
 
-.features-list__item {
+.features__item {
   width: 270px;
 
   &:not(:last-child) {
@@ -12,7 +12,7 @@
   }
 }
 
-.features-list__img {
+.features__box {
   @include center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -23,7 +23,7 @@
   border-radius: 4px;
 }
 
-.features-list__title {
+.features__title {
   margin-bottom: 10px;
 
   @include font(14px, 1.14, 0.03em);
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.features-list__text {
+.features__text {
   @include font(14px, 1.71, 0.03em);
 
   color: var(--first-text-color);

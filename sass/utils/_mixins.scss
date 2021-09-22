@@ -1,12 +1,17 @@
-@mixin font($fz: 16px, $lh: 1.14, $fw: 400, $ls: 0.02em) {
-  font-size: $fz;
-  line-height: $lh;
-  font-weight: $fw;
-  letter-spacing: $ls;
+@mixin font(
+  $FontSize: 16px,
+  $linHeight: 1.14,
+  $fontWeight: 400,
+  $letSpacing: 0.02em
+) {
+  font-size: $FontSize;
+  line-height: $linHeight;
+  font-weight: $fontWeight;
+  letter-spacing: $letSpacing;
 }
 
-@mixin center($ds: flex, $jf: center, $ai: center) {
-  display: $ds;
-  justify-content: $jf;
-  align-items: $ai;
+@mixin center($display: flex, $justContent: center, $alItems: center) {
+  display: $display;
+  justify-content: $justContent;
+  align-items: $alItems;
 }

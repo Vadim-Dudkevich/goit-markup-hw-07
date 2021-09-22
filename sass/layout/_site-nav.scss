@@ -10,7 +10,7 @@
     margin-right: 50px;
   }
 
-  & .current::after {
+  & .nav-list__link---current::after {
     content: '';
 
     position: absolute;
@@ -40,11 +40,10 @@
 
   &:hover,
   &:focus {
-    outline: none;
     color: var(--akcent-text-color);
   }
 }
 
-.current {
+.nav-list__link---current {
   color: var(--akcent-text-color);
 }
